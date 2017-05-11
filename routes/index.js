@@ -10,7 +10,7 @@ exports.home = function(req, res){
   var Movies = moviesJSON.movies;  //#to get movies array
   res.render('../views/home', {
    title : "Star Wars Movies",
-   movies : Movies}); //#pass Movies
+   movies : Movies}); //#pass Movies movies variable
 };
 
 //#4

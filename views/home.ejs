@@ -7,10 +7,25 @@
 
   </head>
   <body>
+
+    <!-- #below after styling -->
+   <div id="hero-image">
+     <h1 id="hero-title"><%= title %></h1>
+   </div>
+
+    <!-- #after styling add some more styling -->
+   <div id="posters-wrapper" class="content-padding" clear-fix>
      <!-- #delete hello world and create movies each method after defined Movies var-->
      <% for (var i = 0; i < movies.length; i++) { %>
-         <img src="/images/<%= movies[i].poster %>" class="img-responsive">
+        <div class ="poster">
+          <img src="/images/<%= movies[i].poster %>" class="img-responsive">   <!--#this one automatically search public because created var path and app.use(express.static(path.join(__dirname, 'public'))); -->
+        </div>
      <% } %>
+
+   </div>
+
+
+
 
      <% include partials/scripts.ejs %>
   </body>

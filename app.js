@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 var routes = require('./routes');
 //#specify the directory of static assets, do after adding each method in the view
 var path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));        //?????????????? #static assets are path in public path directory
+app.use(express.static(path.join(__dirname, 'public')));        // #static assets are path in public path directory
                                                                  //make app automatically look in the public directory for static assets(everything in the pub directory like images, stylesheets)
 
 
