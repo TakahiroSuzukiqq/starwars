@@ -7,10 +7,10 @@ var moviesJSON = require('../movies.json');
 
 //#6
 exports.home = function(req, res){
-  var Movies = moviesJSON.movies;  //#to get movies array
+  var Movies = moviesJSON.movies;  //#to get movies array, "movies" is coming from an array name in movies.JSON
   res.render('../views/home', {
    title : "Star Wars Movies",
-   movies : Movies}); //#pass Movies movies variable
+   movies : Movies}); //#pass Movies movies variable, pass movies' data(array)(stored in moviesJSON) through this. and call movies var in home.ejs
 };
 
 //#4
